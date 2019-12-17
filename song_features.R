@@ -42,14 +42,14 @@ access_token <- get_spotify_authorization_code()
 
 ## Let's go!
 
-username <- "your-username" ## Username of the owner of the playlist. If it's not you, the playlist must be public
-playlist_id <- "your-playlist-id" ## Playlist ID of the playlist you want to generate the cover for
+username <- "your-username" ## Spotify username of the owner of the playlist. If it's not you, the playlist must be public
+playlist_id <- "your-playlist-id" ## Spotify playlist ID of the playlist you want to generate the cover for
 red <- "danceability" ## Feature which determines the red component of the color
 green <- "energy" ## Feature which determines the green component of the color
 blue <- "valence" ## Feature which determines the blue component of the color
 height_feature <- "popularity" ## Feature which determines the height of the individual bars
 
-## Make sure that dplyr can get the column names when they are stored in a character vector
+## Make sure that dplyr can get the column names as they are stored in a character vector
 
 red <- ensym(red)
 green <- ensym(green)

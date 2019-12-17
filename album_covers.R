@@ -42,7 +42,7 @@ access_token <- get_spotify_authorization_code()
 
 ## Let's go!
 
-playlist_id <- "your-playlist-id" ## Playlist ID of the playlist you want to generate the cover for
+playlist_id <- "your-playlist-id" ## Spotify playlist ID of the playlist you want to generate the cover for
 n_colors <- 20 ## Maximum number of colors extracted from the individual album covers
 
 ## Create tibble of class 'magick-image' with the corresponding values for each album cover
